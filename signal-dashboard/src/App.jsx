@@ -499,6 +499,88 @@ tr:hover td{background:#fdf9f7;}
 .empty-icon{font-size:32px;opacity:0.3;margin-bottom:10px;}
 .empty-msg{font-family:'Playfair Display',serif;font-size:15px;color:${p.textLight};}
 .empty-sub{font-size:12px;color:${p.textLight};margin-top:4px;opacity:0.7;}
+
+/* ── MOBILE ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .dash{flex-direction:column;height:100dvh;}
+  .sidebar{display:none;}
+  .main{flex:1;min-height:0;padding-bottom:64px;}
+  .mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:100;background:#2e2420;border-top:1px solid #3d2f2a;height:64px;align-items:stretch;}
+  .mobile-nav-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:#c4a7a0;font-size:9px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;transition:all 0.15s;border:none;background:none;padding:8px 4px;}
+  .mobile-nav-item.active{color:#c9a96e;}
+  .mobile-nav-item .m-icon{font-size:20px;line-height:1;}
+  .topbar{padding:0 16px;height:52px;}
+  .topbar-title{font-size:16px;}
+  .topbar-date{display:none;}
+  .kpi-bar{padding:10px 14px;gap:10px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .kpi-bar::-webkit-scrollbar{display:none;}
+  .kpi-card{min-width:120px;flex-shrink:0;padding:10px 12px;}
+  .kpi-val{font-size:20px;}
+  .kpi-lbl{font-size:8px;}
+  .kpi-sub{font-size:9px;}
+  .content{padding:14px 12px 20px;}
+  .desktop-only{display:none !important;}
+  .mobile-cards{display:flex;flex-direction:column;gap:10px;}
+  .mobile-card{background:#fff;border:1px solid #e0d0c8;border-radius:14px;padding:16px;cursor:pointer;transition:background 0.1s;-webkit-tap-highlight-color:transparent;}
+  .mobile-card:active{background:#f2e4dc;}
+  .mobile-card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;}
+  .mobile-card-name{font-weight:600;font-size:15px;color:#9d7c78;}
+  .mobile-card-company{font-size:12px;color:#7a6460;margin-top:1px;}
+  .mobile-card-quote{font-size:12px;color:#3a2e2b;font-style:italic;margin:8px 0;line-height:1.45;border-left:2px solid #c9a96e;padding-left:8px;}
+  .mobile-card-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;align-items:center;}
+  .mobile-card-leak{font-size:10px;color:#c97070;font-weight:700;margin-top:6px;}
+  .alerts{gap:6px;margin-bottom:14px;}
+  .alert{font-size:11px;padding:8px 12px;}
+  .parser{padding:14px;}
+  .parser textarea{min-height:80px;}
+  .section-hdr{flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:12px;}
+  .controls{width:100%;}
+  .search-input{width:100%;}
+  .filter-select{width:100%;}
+  .metrics-grid{grid-template-columns:1fr 1fr;gap:10px;}
+  .metric-card{padding:14px;}
+  .metric-card .val{font-size:26px;}
+  .convo-summary-bar{grid-template-columns:1fr 1fr;gap:10px;}
+  .range-tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;}
+  .range-tab{white-space:nowrap;flex-shrink:0;}
+  .touch-card{padding:12px 14px;gap:10px;}
+  .touch-time-col{min-width:52px;}
+  .profile-hero{flex-direction:column;gap:12px;padding:20px;}
+  .hero-name{font-size:20px;}
+  .hero-deal{font-size:24px;}
+  .hero-right{text-align:left;min-width:unset;}
+  .profile-grid{grid-template-columns:1fr;}
+  .profile-card.wide{grid-column:span 1;}
+  .log-touch-form{padding:14px;}
+  .log-touch-grid{grid-template-columns:1fr 1fr;gap:8px;}
+  .form-row{grid-template-columns:1fr;}
+  .form-row-3{grid-template-columns:1fr 1fr;gap:8px;}
+  .backdrop{align-items:flex-end;}
+  .modal{width:100%;border-radius:20px 20px 0 0;max-height:90vh;padding:22px 20px;}
+  .tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;}
+  .tab{white-space:nowrap;flex-shrink:0;padding:8px 14px;font-size:12px;}
+  .hyp-table-wrap{display:none;}
+  .hyp-mobile{display:flex;flex-direction:column;gap:10px;}
+  .hyp-card{background:#fff;border:1px solid #e0d0c8;border-radius:14px;padding:16px;}
+  .hyp-card-id{font-size:10px;font-weight:700;color:#9d7c78;margin-bottom:4px;}
+  .hyp-card-statement{font-size:13px;font-weight:500;margin-bottom:10px;line-height:1.4;}
+  .hyp-card-row{display:flex;justify-content:space-between;align-items:center;margin-top:10px;}
+  .insights-table-wrap{display:none;}
+  .insights-mobile{display:flex;flex-direction:column;gap:10px;}
+  .insight-card{background:#fff;border:1px solid #e0d0c8;border-radius:14px;padding:16px;}
+  .insight-card-theme{font-size:14px;font-weight:600;margin-bottom:4px;}
+  .insight-card-quote{font-size:12px;color:#7a6460;font-style:italic;margin-bottom:10px;line-height:1.4;}
+  .page-footer{flex-direction:column;gap:10px;align-items:flex-start;}
+  .next-exp{font-size:11px;}
+  .table-wrap{border-radius:10px;overflow-x:auto;}
+  table{min-width:600px;}
+}
+@media (min-width:769px) {
+  .mobile-nav{display:none;}
+  .mobile-cards{display:none;}
+  .hyp-mobile{display:none;}
+  .insights-mobile{display:none;}
+}
 `;
 
 // ─── TOUCH TYPE COLORS ────────────────────────────────────────────────────────
@@ -1030,7 +1112,41 @@ function PipelineView({ data, setData, onOpenLead }) {
         </div>
       </div>
 
-      <div className="table-wrap">
+      {/* MOBILE CARDS */}
+      <div className="mobile-cards">
+        {filtered.map(l => {
+          const score = healthScore(l);
+          const hl = healthLabel(score);
+          const leak = isPipelineLeak(l);
+          return (
+            <div key={l.id} className="mobile-card" onClick={() => onOpenLead(l.id)}
+              style={{ borderLeft: `3px solid ${leak ? p.danger : hl.color}` }}>
+              <div className="mobile-card-top">
+                <div>
+                  <div className="mobile-card-name">{l.leadName}</div>
+                  <div className="mobile-card-company">{l.company} · {l.subSegment}</div>
+                </div>
+                <div style={{ textAlign:"right" }}>
+                  <StagePill stage={l.stage} />
+                  <div style={{ fontSize:11, color:p.textLight, marginTop:4 }}>${(l.dealSize||0).toLocaleString()}</div>
+                </div>
+              </div>
+              {l.painQuote && <div className="mobile-card-quote">"{l.painQuote.slice(0,100)}{l.painQuote.length>100?"…":""}"</div>}
+              <div className="mobile-card-meta">
+                <UrgencyBar value={l.urgency} />
+                <span style={{ fontSize:10, color: l.budgetOwner==="Yes" ? p.success : p.textLight }}>
+                  {l.budgetOwner==="Yes" ? "✓ Budget" : "Budget?"}
+                </span>
+                {l.nextActionDate && <span style={{ fontSize:10, color:p.textLight }}>Next: {l.nextActionDate}</span>}
+              </div>
+              {leak && <div className="mobile-card-leak">⚡ PIPELINE LEAK — no next action date</div>}
+            </div>
+          );
+        })}
+      </div>
+
+      {/* DESKTOP TABLE */}
+      <div className="table-wrap desktop-only">
         <table>
           <thead>
             <tr>
@@ -1396,7 +1512,49 @@ function HypothesisView({ data, setData }) {
         <button className="btn btn-primary" onClick={() => setShowModal(true)}>+ New Hypothesis</button>
       </div>
 
-      <div className="table-wrap">
+      {/* MOBILE hypothesis cards */}
+      <div className="hyp-mobile">
+        {data.hypotheses.map(h => {
+          const strength = h.supporting >= 3 ? { label:"🟢 Strengthening", color:p.success }
+            : h.contradicting > h.supporting ? { label:"🔴 Weakening", color:p.danger }
+            : { label:"🟡 Testing", color:p.warn };
+          return (
+            <div key={h.id} className="hyp-card">
+              <div className="hyp-card-id">{h.id} · {h.segment}</div>
+              <div className="hyp-card-statement">{h.statement}</div>
+              <div style={{ fontSize:11, color:p.textLight, marginBottom:8 }}>{h.valueProp}</div>
+              <div className="hyp-card-row">
+                <div style={{ display:"flex", gap:10 }}>
+                  <div style={{ textAlign:"center" }}>
+                    <div style={{ fontSize:18, fontWeight:700, color:p.success }}>{h.supporting}</div>
+                    <div style={{ fontSize:9, color:p.textLight }}>Supporting</div>
+                    <button style={{ marginTop:4, border:`1px solid ${p.success}`, background:"none", borderRadius:4, cursor:"pointer", fontSize:10, padding:"2px 8px", color:p.success }}
+                      onClick={() => updateH(h.id,"supporting",h.supporting+1)}>+</button>
+                  </div>
+                  <div style={{ textAlign:"center" }}>
+                    <div style={{ fontSize:18, fontWeight:700, color:p.danger }}>{h.contradicting}</div>
+                    <div style={{ fontSize:9, color:p.textLight }}>Against</div>
+                    <button style={{ marginTop:4, border:`1px solid ${p.danger}`, background:"none", borderRadius:4, cursor:"pointer", fontSize:10, padding:"2px 8px", color:p.danger }}
+                      onClick={() => updateH(h.id,"contradicting",h.contradicting+1)}>+</button>
+                  </div>
+                </div>
+                <div style={{ textAlign:"right" }}>
+                  <div style={{ fontSize:10, color:strength.color, fontWeight:600 }}>{strength.label}</div>
+                  <div style={{ marginTop:6 }}>
+                    <select style={{ fontSize:11, border:`1px solid ${p.border}`, borderRadius:6, padding:"4px 8px", background:p.cream, color:p.text }}
+                      value={h.status} onChange={e => updateH(h.id,"status",e.target.value)}>
+                      <option>Testing</option><option>Validated</option><option>Invalidated</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* DESKTOP hypothesis table */}
+      <div className="table-wrap hyp-table-wrap">
         <table>
           <thead>
             <tr><th>ID</th><th>Statement</th><th>Segment</th><th>Problem</th><th>Value Prop</th><th>Experiment Type</th><th>Test Date</th><th>✓ Support</th><th>✗ Contradict</th><th>Result</th><th>Decision</th><th>Status</th></tr>
@@ -1535,7 +1693,35 @@ function InsightsView({ data, setData }) {
         </div>
       )}
 
-      <div className="table-wrap">
+      {/* MOBILE insight cards */}
+      <div className="insights-mobile">
+        {sorted.map(i => (
+          <div key={i.id} className="insight-card">
+            <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:6 }}>
+              <div className="insight-card-theme">{i.painTheme}</div>
+              <span style={{ fontSize:10, padding:"2px 9px", borderRadius:12,
+                background: i.intensity==="High" ? "#fde8e8" : i.intensity==="Medium" ? "#fdf3e0" : "#f0f5f2",
+                color: i.intensity==="High" ? p.danger : i.intensity==="Medium" ? "#9a6a1e" : p.success }}>
+                {i.intensity}
+              </span>
+            </div>
+            <div className="insight-card-quote">"{i.quote}"</div>
+            <div style={{ fontSize:11, color:p.textLight, marginBottom:10 }}>{i.segment} · {i.linkedHypothesis}</div>
+            <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center" }}>
+              <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+                <span style={{ fontSize:22, fontWeight:700, color: i.frequency>=3 ? p.danger : i.frequency>=2 ? p.warn : p.textLight }}>{i.frequency}</span>
+                <span style={{ fontSize:10, color:p.textLight }}>mentions</span>
+                <button style={{ border:`1px solid ${p.gold}`, background:"none", borderRadius:6, cursor:"pointer", fontSize:11, padding:"3px 10px", color:p.gold }}
+                  onClick={() => increment(i.id)}>+ mention</button>
+              </div>
+              <div style={{ fontSize:11, fontWeight:600, color:p.mauvedark }}>${(i.revenuePotential||0).toLocaleString()}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* DESKTOP insights table */}
+      <div className="table-wrap insights-table-wrap">
         <table>
           <thead>
             <tr><th>ID</th><th>Pain Theme</th><th>Exact Quote</th><th>Segment</th><th>Frequency</th><th>Intensity</th><th>Example Leads</th><th>Revenue Potential</th><th>Priority</th><th>Hypothesis</th></tr>
@@ -2024,6 +2210,24 @@ export default function App() {
             </div>
           </div>
         </main>
+
+        {/* MOBILE BOTTOM NAV */}
+        <nav className="mobile-nav">
+          {[
+            { id:"pipeline", label:"Pipeline", icon:"◈" },
+            { id:"metrics",  label:"Metrics",  icon:"◉" },
+            { id:"hypotheses", label:"Hypotheses", icon:"◇" },
+            { id:"insights", label:"Insights", icon:"◎" },
+            { id:"conversations", label:"Convos", icon:"◌" },
+          ].map(n => (
+            <button key={n.id}
+              className={`mobile-nav-item ${!isProfile && page === n.id ? "active" : ""}`}
+              onClick={() => { setPage(n.id); setProfileId(null); }}>
+              <span className="m-icon">{n.icon}</span>
+              {n.label}
+            </button>
+          ))}
+        </nav>
       </div>
     </>
   );
